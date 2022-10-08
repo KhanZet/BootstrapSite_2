@@ -1,0 +1,78 @@
+@import 'bootstrap';
+
+// Colors
+$color1: #4E1163;
+$color2: #6B5098;
+$color3: #1B053D;
+$color4: #1B1919;
+// --------------
+body{
+	background-color: $color1;
+}
+
+#header > .container{
+	background-color: $color4;
+	border-radius: 15px;
+	// border-top-left-radius: 15px;
+	// border-top-right-radius: 15px;
+}
+#header{
+	margin-top: 35px;
+	a{
+		color: $white;
+		&:hover{
+			color: $color1;
+		}
+	}
+}
+main, footer, section {
+	margin-top: 15px;
+	& > .container{
+		padding: 50px 0;
+		background-color: $color4;
+		border-radius: 15px;
+	}
+
+}
+#main{
+	color: $white;
+	& > .container{
+		padding: 50px 15px;
+	}
+}
+
+.projects{
+	& > .container{
+		padding: 50px 15px;
+	}
+	.card{
+		border-color: $color1;
+		margin-bottom: 15px;
+		background-color: #f2f2d5;
+		width: 100% !important;
+		max-width: 20rem !important;
+	}
+	a{
+		background-color: $color4;
+		border-color: $white;
+		&:hover{
+			background-color: $color1;
+
+		}
+	}
+}
+@media (max-width: 768px) {
+	.projects{
+		.card{
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+	
+}
+
+.team{
+	.card{
+		background-color: #f2f2d5 !important;
+	}
+}
